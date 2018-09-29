@@ -8,7 +8,13 @@
     { "key": "ctrl+backspace", "command": "deleteWordPartLeft", "when": "textInputFocus" },
     { "key": "ctrl+shift+right", "command": "cursorWordPartRightSelect", "when": "textInputFocus" },
     { "key": "ctrl+shift+left", "command": "cursorWordPartLeftSelect", "when": "textInputFocus" },
-    { "key": "ctrl+shift+s", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
-    { "key": "ctrl+shift+a", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
+
+    // it is important to use these two commands instead of nextMatchFindAction previousMatchFindAction as
+    // these ones will not open the find dialog when used, and will preserve if we are looking for whole word
+    // or just the word part
+    { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
+    { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
+
+
     { "key": "ctrl+alt+p",                "command": "workbench.action.openRecent" },
 ]
