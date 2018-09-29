@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 10,
+    "workbench.colorTheme": "comfortable-color-theme",
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+
+    // Controls whether the editor should highlight matches similar to the selection
+    "editor.selectionHighlight": false
+}
