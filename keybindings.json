@@ -17,4 +17,6 @@
 
 
     { "key": "ctrl+alt+p",                "command": "workbench.action.openRecent" },
+
+    { "key": "ctrl+k ctrl+l",          "command": "editor.action.fontZoomReset" },
 ]

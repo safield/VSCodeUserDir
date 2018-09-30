@@ -1,9 +1,25 @@
 {
-    "editor.fontSize": 10,
+    // if you change zoomlevel you are going to
+    // have to change fontSize and caret thickness
+    "window.zoomLevel": -1,
+    "editor.fontSize": 12,
+    "editor.cursorWidth": 4,
+    
+    // Determines which settings editor to use by default.
+    //  - ui: Use the settings UI editor.
+    //  - json: Use the JSON file editor.
+    "workbench.settings.editor": "json",
+
     "workbench.colorTheme": "comfortable-color-theme",
+
+    // turning this off prevents current files to be replaced by newly opened files 
     "workbench.editor.enablePreview": false,
     "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
 
     // Controls whether the editor should highlight matches similar to the selection
-    "editor.selectionHighlight": false
+    "editor.selectionHighlight": false,
+
+    // VSCode automatically put here when you unclick the "Show welcome screen on startup"
+    "workbench.startupEditor": "newUntitledFile",
 }
