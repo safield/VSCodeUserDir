@@ -19,4 +19,8 @@
     { "key": "ctrl+alt+p",                "command": "workbench.action.openRecent" },
 
     { "key": "ctrl+k ctrl+l",          "command": "editor.action.fontZoomReset" },
+
+    { "key": "alt+shift+1",                "command": "workbench.action.editorLayoutSingle" },
+    { "key": "alt+shift+5",                "command": "workbench.action.editorLayoutTwoByTwoGrid" },
+    { "key": "alt+shift+2",                "command": "workbench.action.editorLayoutTwoColumns" },
 ]

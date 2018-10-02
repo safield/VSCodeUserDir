@@ -14,6 +14,11 @@
 
     // turning this off prevents current files to be replaced by newly opened files 
     "workbench.editor.enablePreview": false,
+    // "workbench.editor.enablePreviewFromQuickOpen": false potentially this setting might be better than the above one. (time will tell)
+
+    // prevent an editor pane from closing when you close the file that is inside it
+    "workbench.editor.closeEmptyGroups": false,
+
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
 
@@ -22,4 +27,6 @@
 
     // VSCode automatically put here when you unclick the "Show welcome screen on startup"
     "workbench.startupEditor": "newUntitledFile",
+
+    "workbench.settings.enableNaturalLanguageSearch": false,
 }
