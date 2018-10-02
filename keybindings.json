@@ -23,4 +23,15 @@
     { "key": "alt+shift+1",                "command": "workbench.action.editorLayoutSingle" },
     { "key": "alt+shift+5",                "command": "workbench.action.editorLayoutTwoByTwoGrid" },
     { "key": "alt+shift+2",                "command": "workbench.action.editorLayoutTwoColumns" },
+
+    {
+        "key": "shift+escape",
+        "command": "workbench.action.closePanel"
+    },
+
+    // just swapped these shortcuts from the defaults
+    { "key": "ctrl+shift+pagedown",        "command": "workbench.action.moveEditorToNextGroup" },
+    { "key": "ctrl+shift+pageup",         "command": "workbench.action.moveEditorToPreviousGroup" },
+    { "key": "ctrl+alt+pageup",     "command": "workbench.action.moveEditorLeftInGroup" },
+    { "key": "ctrl+alt+pagedown",   "command": "workbench.action.moveEditorRightInGroup" },
 ]
