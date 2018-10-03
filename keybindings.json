@@ -16,6 +16,14 @@
     { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
 
 
+    // this needs to be added in a second time to override the second mapping of ctrl+w to 
+    // workbench.action.closeGroup in the default keybindings (ctrl+w is mapped twice in the default key bindings)
+    // see arnavion comment in this thread https://github.com/Microsoft/vscode/issues/25536
+    { "key": "ctrl+w", "command": "workbench.action.closeActiveEditor" },
+
+    // this will just close files and not editor groups. By default ctrl+shift+w is set to close the whole app!
+    { "key": "ctrl+shift+w", "command": "workbench.action.closeAllEditors" },
+
     { "key": "ctrl+alt+p",                "command": "workbench.action.openRecent" },
 
     { "key": "ctrl+k ctrl+l",          "command": "editor.action.fontZoomReset" },

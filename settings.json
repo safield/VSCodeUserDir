@@ -18,6 +18,7 @@
 
     // prevent an editor pane from closing when you close the file that is inside it
     "workbench.editor.closeEmptyGroups": false,
+    "window.closeWhenEmpty": false,
 
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
@@ -29,4 +30,9 @@
     "workbench.startupEditor": "newUntitledFile",
 
     "workbench.settings.enableNaturalLanguageSearch": false,
+
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#ff3300",
+        "tab.unfocusedActiveBorder": "#000000"
+    }
 }
