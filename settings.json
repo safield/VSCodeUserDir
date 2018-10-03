@@ -34,5 +34,16 @@
     "workbench.colorCustomizations": {
         "tab.activeBorder": "#ff3300",
         "tab.unfocusedActiveBorder": "#000000"
+    },
+
+    // prevent these file types from showing up in workspaces and ctrl+p
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.o": true, // added by me
+        "**/*.o.d": true // added by me
     }
 }
