@@ -2,7 +2,7 @@
     // if you change zoomlevel you are going to
     // have to change fontSize and caret thickness
     "window.zoomLevel": -1,
-    "editor.fontSize": 12,
+    "editor.fontSize": 13,
     "editor.cursorWidth": 4,
     
     // Determines which settings editor to use by default.
@@ -45,5 +45,9 @@
         "**/.DS_Store": true,
         "**/*.o": true, // added by me
         "**/*.o.d": true // added by me
-    }
+    },
+
+    "workbench.activityBar.visible": true,
+
+    "editor.smoothScrolling": true
 }
