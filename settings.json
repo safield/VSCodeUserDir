@@ -13,7 +13,13 @@
     "workbench.colorTheme": "comfortable-color-theme",
 
     // turning this off prevents current files to be replaced by newly opened files 
-    "workbench.editor.enablePreview": false,
+    // in all situations, even when previewing from search results in side bar. This
+    // is the default setting (true) but keep it here for reference
+    "workbench.editor.enablePreview": true, 
+    // this is similar to above, but will only disable preview on files
+    // opened from Quick Open (ctrl+p)
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    
     // "workbench.editor.enablePreviewFromQuickOpen": false potentially this setting might be better than the above one. (time will tell)
 
     // prevent an editor pane from closing when you close the file that is inside it
@@ -47,7 +53,12 @@
         "**/*.o.d": true // added by me
     },
 
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
+
+    // all is the default setting, but keep this in here, because I can see maybe
+    // not wanting this setting on it the end
+    "scm.diffDecorations": "all",
+    "scm.diffDecorationsGutterWidth": 1, // default is 3
 
     "editor.smoothScrolling": true
 }
