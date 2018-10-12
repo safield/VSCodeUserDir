@@ -9,11 +9,17 @@
     { "key": "ctrl+shift+right", "command": "cursorWordPartRightSelect", "when": "textInputFocus" },
     { "key": "ctrl+shift+left", "command": "cursorWordPartLeftSelect", "when": "textInputFocus" },
 
-    // it is important to use these two commands instead of nextMatchFindAction previousMatchFindAction as
-    // these ones will not open the find dialog when used, and will preserve if we are looking for whole word
-    // or just the word part
-    { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
-    { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
+    // The advantage to using moveSelectionToNextFindMatch instead of nextMatchFindAction previousMatchFindAction
+    // is that moveSelectionToNextFindMatch will not open the find dialog when used, and will preserve if we are looking for whole word
+    // or just the word part.
+    // HOLD ON! There is a downside to using moveSelectionToNextFindMatch over nextMatchFindAction.
+    // If I press ctrl+d to highlight a word and then use moveSelectionToNextFindMatch, then I unselect and use
+    // moveSelectionToNextFindMatch again, it will not remember the last search term! If I use nextMatchFindAction
+    // it will remember the last search term.
+    // { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
+    // { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
+    { "key": "ctrl+shift+s", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
+    { "key": "ctrl+shift+a", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
 
 
     // this needs to be added in a second time to override the second mapping of ctrl+w to 
@@ -61,6 +67,8 @@
     { "key": "ctrl+alt+o","command": "revealFileInOS" },
     { "key": "ctrl+alt+e","command": "revealInExplorer" },
 
+    { "key": "ctrl+l", "command": "cursorRight", "when": "textInputFocus" },
+    { "key": "ctrl+;", "command": "cursorEnd", "when": "textInputFocus" },
 
     { "key": "ctrl+n", "command": "-workbench.action.files.newUntitledFile" },
     { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" , "when": "!filesExplorerFocus" },
