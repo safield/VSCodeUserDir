@@ -1,4 +1,8 @@
 {
+    // Controls whether opening keybinding settings also opens an editor showing all default keybindings.
+    // Default is true, but this will protect against other versions setting default to false
+    "workbench.settings.openDefaultKeybindings": true,
+
     // if you change zoomlevel you are going to
     // have to change fontSize and caret thickness
     "window.zoomLevel": -1,
@@ -53,7 +57,7 @@
         "**/*.o.d": true // added by me
     },
 
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
 
     // all is the default setting, but keep this in here, because I can see maybe
     // not wanting this setting on it the end

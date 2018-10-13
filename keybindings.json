@@ -78,4 +78,8 @@
     { "key": "ctrl+shift+x",          "command": "workbench.view.explorer" },
 
     { "key": "ctrl+alt+o",            "command": "revealFileInOS","when": "!editorFocus" },
+
+    // this requires Bookmarks plugin by Alessandro Fragnani
+    { "key": "ctrl+f2",            "command": "bookmarks.toggle", "when": "editorTextFocus" },
+    { "key": "f2",            "command": "bookmarks.jumpToNext","when": "editorTextFocus" },
 ]
