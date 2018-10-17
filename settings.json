@@ -57,12 +57,13 @@
         "**/*.o.d": true // added by me
     },
 
-    "workbench.activityBar.visible": true,
+    "workbench.activityBar.visible": false,
 
     // all is the default setting, but keep this in here, because I can see maybe
     // not wanting this setting on it the end
     "scm.diffDecorations": "all",
     "scm.diffDecorationsGutterWidth": 1, // default is 3
 
-    "editor.smoothScrolling": true
+    "editor.smoothScrolling": true,
+    "workbench.statusBar.visible": false
 }
