@@ -38,10 +38,14 @@
     { "key": "alt+shift+5",                "command": "workbench.action.editorLayoutTwoByTwoGrid" },
     { "key": "alt+shift+2",                "command": "workbench.action.editorLayoutTwoColumns" },
 
-    {
-        "key": "shift+escape",
-        "command": "workbench.action.closePanel"
-    },
+    { "key": "escape",                "command": "workbench.action.toggleSidebarVisibility", "when": "sidebarVisible"},
+
+    // all of these commands work to make escape key always exit the panel
+    { "key": "escape", "command": "workbench.action.terminal.toggleTerminal", "when": "activePanel == 'workbench.panel.terminal'" },
+    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.markers'" },
+    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.output'" },
+    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.repl'" },
+    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.comments'" },
 
     // just swapped these shortcuts from the defaults
     { "key": "ctrl+shift+pagedown",        "command": "workbench.action.moveEditorToNextGroup" },
