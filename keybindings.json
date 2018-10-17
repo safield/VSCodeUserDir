@@ -46,6 +46,7 @@
     { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.output'" },
     { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.repl'" },
     { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.comments'" },
+    // { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" }, does not really work
 
     // just swapped these shortcuts from the defaults
     { "key": "ctrl+shift+pagedown",        "command": "workbench.action.moveEditorToNextGroup" },
@@ -86,4 +87,9 @@
     // this requires Bookmarks plugin by Alessandro Fragnani
     { "key": "ctrl+f2",            "command": "bookmarks.toggle", "when": "editorTextFocus" },
     { "key": "f2",            "command": "bookmarks.jumpToNext","when": "editorTextFocus" },
+
+    { "key": "f1",          "command": "workbench.actions.view.problems" },
+
+    { "key": "ctrl+shift+b","command": "workbench.action.tasks.runTask"},
+    {"key": "ctrl+k ctrl+1","command": "search.action.collapseSearchResults"}
 ]
