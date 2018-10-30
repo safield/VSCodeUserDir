@@ -65,5 +65,14 @@
     "scm.diffDecorationsGutterWidth": 1, // default is 3
 
     "editor.smoothScrolling": true,
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": false,
+
+    // When enabled, the notifications for extension recommendations will not be shown.
+    "extensions.ignoreRecommendations": false,
+
+    // this will make sure that snippets always get priority
+    "editor.snippetSuggestions": "top",
+
+    // a more verbose window header title
+    "window.title": "${activeEditorLong}${separator}${rootName}"
 }

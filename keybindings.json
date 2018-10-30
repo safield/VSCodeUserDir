@@ -91,5 +91,13 @@
     { "key": "f1",          "command": "workbench.actions.view.problems" },
 
     { "key": "ctrl+shift+b","command": "workbench.action.tasks.runTask"},
-    {"key": "ctrl+k ctrl+1","command": "search.action.collapseSearchResults"}
+    {"key": "ctrl+k ctrl+1","command": "search.action.collapseSearchResults"},
+
+    // remap this from the default ctrl+, combo, as I like to use that for hide tabs (at least in sublim)
+    { "key": "ctrl+k ctrl+,", "command": "workbench.action.openSettings" },
+
+    // unmap this because they get in the way of my clumsy fingers. I would never want to be able to scale the UI
+    // so frequently that I would need a keyboard shortcut for it anyways
+    { "key": "ctrl+=",                "command": "-workbench.action.zoomIn" },
+    { "key": "ctrl+-",                "command": "-workbench.action.zoomOut" }
 ]
