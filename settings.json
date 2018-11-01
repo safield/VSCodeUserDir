@@ -57,7 +57,7 @@
         "**/*.o.d": true // added by me
     },
 
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
 
     // all is the default setting, but keep this in here, because I can see maybe
     // not wanting this setting on it the end
@@ -70,9 +70,21 @@
     // When enabled, the notifications for extension recommendations will not be shown.
     "extensions.ignoreRecommendations": false,
 
-    // this will make sure that snippets always get priority
+    // sometimes non user snippets added by extension are cluttering my suggestions list
+    // so for language extensions like Java and C++, go into the extensions folder and
+    // delete the snippets folder in there
     "editor.snippetSuggestions": "top",
 
     // a more verbose window header title
-    "window.title": "${activeEditorLong}${separator}${rootName}"
+    "window.title": "${activeEditorLong}${separator}${rootName}",
+
+    // Controls whether suggestions should automatically show up while typing.
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true, // default is false
+        "strings": true // default is false
+    },
+
+    // Control whether an active snippet prevents quick suggestions.
+    "editor.suggest.snippetsPreventQuickSuggestions": false
 }
