@@ -61,6 +61,7 @@
     // these selection commands requires extension "Quick and Simple Text selection"
     { "key": "ctrl+shift+m",              "command": "extension.selectParenthesis", "when": "editorTextFocus && !editorReadonly" },
     { "key": "ctrl+shift+,",              "command": "extension.selectEitherQuote", "when": "editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+shift+.",              "command": "extension.selectSquareBrackets", "when": "editorTextFocus && !editorReadonly" },
 
     // matches sublimes goto symbol
     { "key": "ctrl+r",          "command": "workbench.action.gotoSymbol" },
