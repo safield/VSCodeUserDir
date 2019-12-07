@@ -101,5 +101,27 @@
     // unmap this because they get in the way of my clumsy fingers. I would never want to be able to scale the UI
     // so frequently that I would need a keyboard shortcut for it anyways
     { "key": "ctrl+=",                "command": "-workbench.action.zoomIn" },
-    { "key": "ctrl+-",                "command": "-workbench.action.zoomOut" }
+    { "key": "ctrl+-",                "command": "-workbench.action.zoomOut" },
+
+    // move by 3 lines at once
+    {
+        "key": "ctrl+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 3
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 3
+        },
+        "when": "editorTextFocus"
+    },
 ]
