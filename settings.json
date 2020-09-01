@@ -52,10 +52,11 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/*.o": true, // added by me
-        "**/*.o.d": true // added by me
+        "**/*.o.d": true, // added by me
+        "**/*.class": true // added by me
     },
 
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
 
     // all is the default setting, but keep this in here, because I can see maybe
     // not wanting this setting on it the end
