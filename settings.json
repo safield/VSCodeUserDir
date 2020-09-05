@@ -3,6 +3,7 @@
     // Default is true, but this will protect against other versions setting default to false
     "workbench.settings.openDefaultKeybindings": true,
 
+    "workbench.settings.useSplitJSON":true,
     // if you change zoomlevel you are going to
     // have to change fontSize and caret thickness
     "window.zoomLevel": -1,

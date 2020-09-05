@@ -124,4 +124,6 @@
         },
         "when": "editorTextFocus"
     },
+
+    { "key": "alt+m", "command": "workbench.action.toggleMenuBar" }
 ]
