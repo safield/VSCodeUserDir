@@ -51,9 +51,13 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/*.o": true, // added by me
-        "**/*.o.d": true, // added by me
-        "**/*.class": true // added by me
+        "**/*.o": true,
+        "**/*.o.d": true,
+        "**/*.class": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
 
     "workbench.activityBar.visible": true,
@@ -91,4 +95,11 @@
     "editor.fontFamily": "'Inconsolata'",
     "editor.fontSize": 15,
     "editor.lineHeight": 15
+    "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
+
+    // prevent VSCode from adding unthemed color highglights to variables
+    "editor.occurrencesHighlight": false,
+    //prevent vscode from dimming unused variables
+    "editor.showUnused": false,
+    "workbench.colorTheme": "Safire Star"
 }
