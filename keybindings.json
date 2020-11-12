@@ -16,10 +16,10 @@
     // If I press ctrl+d to highlight a word and then use moveSelectionToNextFindMatch, then I unselect and use
     // moveSelectionToNextFindMatch again, it will not remember the last search term! If I use nextMatchFindAction
     // it will remember the last search term.
-    // { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
-    // { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
-    { "key": "ctrl+shift+s", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
-    { "key": "ctrl+shift+a", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
+    { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
+    { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
+    // { "key": "ctrl+shift+s", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
+    // { "key": "ctrl+shift+a", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
 
 
     // this needs to be added in a second time to override the second mapping of ctrl+w to 
