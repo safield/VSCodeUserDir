@@ -16,10 +16,11 @@
     // If I press ctrl+d to highlight a word and then use moveSelectionToNextFindMatch, then I unselect and use
     // moveSelectionToNextFindMatch again, it will not remember the last search term! If I use nextMatchFindAction
     // it will remember the last search term.
-    { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
-    { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
-    // { "key": "ctrl+shift+s", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
-    // { "key": "ctrl+shift+a", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
+    // Also moveSelectionToNextFindMatch will overwrite the search term with whatever is at the caret
+    // { "key": "ctrl+shift+s", "command": "editor.action.moveSelectionToNextFindMatch", "when": "editorFocus" },
+    // { "key": "ctrl+shift+a", "command": "editor.action.moveSelectionToPreviousFindMatch", "when": "editorFocus" },
+    { "key": "ctrl+shift+s", "command": "editor.action.nextMatchFindAction", "when": "editorFocus" },
+    { "key": "ctrl+shift+a", "command": "editor.action.previousMatchFindAction", "when": "editorFocus" },
 
 
     // this needs to be added in a second time to override the second mapping of ctrl+w to 
@@ -92,7 +93,7 @@
     { "key": "f2",            "command": "bookmarks.jumpToNext","when": "editorTextFocus" },
 
     { "key": "f1",          "command": "workbench.actions.view.problems" },
-
+                
     { "key": "ctrl+shift+b","command": "workbench.action.tasks.runTask"},
     {"key": "ctrl+k ctrl+1","command": "search.action.collapseSearchResults"},
 
@@ -126,5 +127,7 @@
         "when": "editorTextFocus"
     },
 
-    { "key": "alt+m", "command": "workbench.action.toggleMenuBar" }
+    { "key": "alt+m", "command": "workbench.action.toggleMenuBar" },
+
+    { "key": "ctrl+alt+s", "command": "saveAll" }
 ]
