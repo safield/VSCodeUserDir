@@ -51,6 +51,9 @@
     { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.comments'" },
     // { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" }, does not really work
 
+    { "key": "ctrl+pagedown", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
+    { "key": "ctrl+pageup", "command": "workbench.action.previousPanelView", "when": "panelFocus" },
+
     // just swapped these shortcuts from the defaults
     { "key": "ctrl+shift+pagedown",        "command": "workbench.action.moveEditorToNextGroup" },
     { "key": "ctrl+shift+pageup",         "command": "workbench.action.moveEditorToPreviousGroup" },
