@@ -40,15 +40,15 @@
     { "key": "alt+shift+2",                "command": "workbench.action.editorLayoutTwoColumns" },
     { "key": "alt+shift+8",                "command": "workbench.action.editorLayoutTwoRows" },
 
-    { "key": "escape",                "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible"},
+    { "key": "ctrl+escape",                "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible"},
 
     // all of these commands work to make escape key always exit the panel
-    { "key": "escape", "command": "workbench.action.terminal.toggleTerminal", "when": "activePanel == 'workbench.panel.terminal'" },
-    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" },
-    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.markers'" },
-    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.output'" },
-    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.repl'" },
-    { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.comments'" },
+    { "key": "ctrl+escape", "command": "workbench.action.terminal.toggleTerminal", "when": "activePanel == 'workbench.panel.terminal'" },
+    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" },
+    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.markers'" },
+    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.output'" },
+    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.repl'" },
+    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.comments'" },
     // { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" }, does not really work
 
     { "key": "ctrl+pagedown", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
