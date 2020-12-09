@@ -94,7 +94,6 @@
     // Control whether an active snippet prevents quick suggestions.
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "breadcrumbs.enabled": false,
-    "workbench.colorTheme": "comfortable-color-theme",
     "editor.fontFamily": "'Inconsolata'",
     "editor.fontSize": 15,
     "editor.lineHeight": 14, // if you make this too small, error underlines get realy hard to see.
@@ -105,7 +104,7 @@
     //prevent vscode from dimming unused variables
     "editor.showUnused": false,
     "workbench.colorTheme": "Safire Star",
-    "dart.closingLabels": false
+    "dart.closingLabels": false,
     "extension.smoothscroll.totalDelay": 150,
     "errorLens.onSave": true
 }
