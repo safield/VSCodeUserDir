@@ -132,5 +132,7 @@
 
     { "key": "alt+m", "command": "workbench.action.toggleMenuBar" },
 
-    { "key": "ctrl+alt+s", "command": "saveAll" }
+    { "key": "ctrl+alt+s", "command": "saveAll" },
+
+    { "key": "ctrl+k ctrl+r", "command": "editor.action.rename", "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly" },
 ]

@@ -60,7 +60,8 @@
         "**/.classpath": true,
         "**/.project": true,
         "**/.settings": true,
-        "**/.factorypath": true
+        "**/.factorypath": true,
+        "**/.history":true //hide history extension backups
     },
 
     "workbench.activityBar.visible": true,
