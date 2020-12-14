@@ -40,16 +40,12 @@
     { "key": "alt+shift+2",                "command": "workbench.action.editorLayoutTwoColumns" },
     { "key": "alt+shift+8",                "command": "workbench.action.editorLayoutTwoRows" },
 
-    { "key": "ctrl+escape",                "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible"},
+    { "key": "alt+left",                "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible"},
+    { "key": "alt+right",                "command": "workbench.action.toggleSidebarVisibility", "when": "!sideBarVisible"},
 
     // all of these commands work to make escape key always exit the panel
-    { "key": "ctrl+escape", "command": "workbench.action.terminal.toggleTerminal", "when": "activePanel == 'workbench.panel.terminal'" },
-    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" },
-    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.markers'" },
-    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.output'" },
-    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.repl'" },
-    { "key": "ctrl+escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.comments'" },
-    // { "key": "escape", "command": "workbench.action.closePanel", "when": "activePanel == 'workbench.panel.terminal'" }, does not really work
+    { "key": "alt+down", "command": "workbench.action.closePanel" },
+    { "key": "alt+up", "command": "workbench.action.focusPanel" },
 
     { "key": "ctrl+pagedown", "command": "workbench.action.nextPanelView", "when": "panelFocus" },
     { "key": "ctrl+pageup", "command": "workbench.action.previousPanelView", "when": "panelFocus" },
