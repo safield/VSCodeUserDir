@@ -85,9 +85,6 @@
     { "key": "ctrl+n", "command": "workbench.action.files.newUntitledFile" , "when": "!filesExplorerFocus" },
     { "key": "ctrl+n", "command": "explorer.newFile" , "when": "filesExplorerFocus" },
 
-    // this needs to be remapped because linux hijacks the default mapping of ctrl+shift+e
-    { "key": "ctrl+shift+x",          "command": "workbench.view.explorer" },
-
     { "key": "ctrl+alt+o",            "command": "revealFileInOS","when": "!editorFocus" },
 
     // this requires Bookmarks plugin by Alessandro Fragnani
