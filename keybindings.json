@@ -1,7 +1,10 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "`",                "command": "workbench.action.gotoLine" },
+    // these two commands just swapped shortcuts
     { "key": "ctrl+shift+d",          "command": "editor.action.deleteLines"},
+    { "key": "ctrl+shift+k",          "command": "workbench.view.debug" },
+    
+    { "key": "`",                "command": "workbench.action.gotoLine" },
     { "key": "ctrl+right", "command": "cursorWordPartRight", "when": "textInputFocus" },
     { "key": "ctrl+left", "command": "cursorWordPartLeft", "when": "textInputFocus" },
     { "key": "ctrl+delete", "command": "deleteWordPartRight", "when": "textInputFocus" },
