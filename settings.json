@@ -125,4 +125,5 @@
     "dart.debugExternalLibraries": true,
     "dart.debugSdkLibraries": true,
     "dart.warnWhenEditingFilesInPubCache": false
+    "dart.enableSdkFormatter": false
 }
