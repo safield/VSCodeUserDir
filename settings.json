@@ -113,7 +113,6 @@
     //prevent vscode from dimming unused variables
     "editor.showUnused": false,
     "workbench.colorTheme": "Safire Star",
-    "dart.closingLabels": false,
     "extension.smoothscroll.totalDelay": 150,
     "errorLens.onSave": true,
     "window.menuBarVisibility": "toggle",
@@ -126,4 +125,5 @@
     "dart.debugExternalLibraries": true,
     "dart.debugSdkLibraries": true,
     "dart.warnWhenEditingFilesInPubCache": false
+    "dart.enableSdkFormatter": false
 }
