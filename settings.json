@@ -126,4 +126,5 @@
     "dart.debugSdkLibraries": true,
     "dart.warnWhenEditingFilesInPubCache": false
     "dart.enableSdkFormatter": false
+    "bookmarks.navigateThroughAllFiles": false
 }
