@@ -104,27 +104,32 @@
     { "key": "ctrl+=",                "command": "-workbench.action.zoomIn" },
     { "key": "ctrl+-",                "command": "-workbench.action.zoomOut" },
 
+    { "key": "ctrl+alt+right",  "command": "extension.extendedCursorMove.moveCursorToView",  "when": "editorTextFocus" },
+    { "key": "ctrl+alt+left",  "command": "center-editor-window.center",  "when": "editorTextFocus" },
+    
+    // { "key": "ctrl+down",             "command": "scrollLineDown", "when": "textInputFocus" , "args": { "value":5 } },
+    // { "key": "ctrl+up",               "command": "scrollLineUp", "when": "textInputFocus" },
     // move by 3 lines at once
-    {
-        "key": "ctrl+up",
-        "command": "cursorMove",
-        "args": {
-            "to": "up",
-            "by": "line",
-            "value": 3
-        },
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+down",
-        "command": "cursorMove",
-        "args": {
-            "to": "down",
-            "by": "line",
-            "value": 3
-        },
-        "when": "editorTextFocus"
-    },
+    // {
+        // "key": "ctrl+up",
+        // "command": "cursorMove",
+        // "args": {
+            // "to": "up",
+            // "by": "line",
+            // "value": 3
+        // },
+        // "when": "editorTextFocus"
+    // },
+    // {
+        // "key": "ctrl+down",
+        // "command": "cursorMove",
+        // "args": {
+            // "to": "down",
+            // "by": "line",
+            // "value": 3
+        // },
+        // "when": "editorTextFocus"
+    // },
 
     { "key": "alt+m", "command": "workbench.action.toggleMenuBar" },
 

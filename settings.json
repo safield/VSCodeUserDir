@@ -12,6 +12,7 @@
     // have to change fontSize and caret thickness
     "window.zoomLevel": -1,
     "editor.cursorWidth": 4,
+    "editor.cursorWidth": 5,
     
     // Determines which settings editor to use by default.
     //  - ui: Use the settings UI editor.
@@ -128,4 +129,6 @@
     "dart.warnWhenEditingFilesInPubCache": false
     "dart.enableSdkFormatter": false
     "bookmarks.navigateThroughAllFiles": false
+    "scrollFaster.scrollByLines": 8,
+    "extension.smoothscroll.linesToScroll": 18,
 }
