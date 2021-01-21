@@ -3,6 +3,11 @@
     // these two commands just swapped shortcuts
     { "key": "ctrl+shift+d",          "command": "editor.action.deleteLines"},
     { "key": "ctrl+shift+k",          "command": "workbench.view.debug" },
+
+    // remap all of these so the are enforced to be the same on mac and linux
+    { "key": "ctrl+shift+f",           "command": "workbench.action.findInFiles" },
+    { "key": "ctrl+shift+e",           "command": "workbench.view.explorer" },
+    { "key": "ctrl+shift+x",           "command": "workbench.view.extensions" },
     
     { "key": "`",                "command": "workbench.action.gotoLine" },
     { "key": "ctrl+right", "command": "cursorWordPartRight", "when": "textInputFocus" },
@@ -35,7 +40,7 @@
     { "key": "ctrl+shift+w", "command": "workbench.action.closeAllEditors" },
 
     { "key": "ctrl+alt+p",                "command": "workbench.action.openRecent" },
-
+    
     { "key": "ctrl+k ctrl+l",          "command": "editor.action.fontZoomReset" },
 
     { "key": "alt+shift+1",                "command": "workbench.action.editorLayoutSingle" },
@@ -43,8 +48,9 @@
     { "key": "alt+shift+2",                "command": "workbench.action.editorLayoutTwoColumns" },
     { "key": "alt+shift+8",                "command": "workbench.action.editorLayoutTwoRows" },
 
-    { "key": "alt+left",                "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible"},
-    { "key": "alt+right",                "command": "workbench.action.toggleSidebarVisibility", "when": "!sideBarVisible"},
+    // these mappings wont work on mac because alt is used to navigate by word
+    // { "key": "alt+left",                "command": "workbench.action.toggleSidebarVisibility", "when": "sideBarVisible"},
+    // { "key": "alt+right",                "command": "workbench.action.toggleSidebarVisibility", "when": "!sideBarVisible"},
 
     // all of these commands work to make escape key always exit the panel
     { "key": "alt+down", "command": "workbench.action.closePanel" },
@@ -62,7 +68,6 @@
     { "key": "ctrl+shift+up",              "command": "editor.action.moveLinesUpAction", "when": "editorTextFocus && !editorReadonly" },
     { "key": "ctrl+shift+down",              "command": "editor.action.moveLinesDownAction", "when": "editorTextFocus && !editorReadonly" },
 
-
     // these selection commands requires extension "Quick and Simple Text selection"
     { "key": "ctrl+shift+m",              "command": "extension.selectParenthesis", "when": "editorTextFocus && !editorReadonly" },
     { "key": "ctrl+shift+,",              "command": "extension.selectEitherQuote", "when": "editorTextFocus && !editorReadonly" },
@@ -79,6 +84,7 @@
     { "key": "ctrl+alt+e","command": "revealInExplorer" },
 
     { "key": "ctrl+l", "command": "cursorRight", "when": "textInputFocus" },
+    { "key": "ctrl+;", "command": "cursorEnd", "when": "textInputFocus" },
     { "key": "ctrl+;", "command": "cursorEnd", "when": "textInputFocus" },
 
     { "key": "ctrl+n", "command": "-workbench.action.files.newUntitledFile" },
