@@ -1,4 +1,5 @@
 {
+    "editor.mouseWheelScrollSensitivity": 5,
     // prevent Ctrl+P from showing recently opened files, since they could be from another workspace
     "search.quickOpen.includeHistory": false,
 
