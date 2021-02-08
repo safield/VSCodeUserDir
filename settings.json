@@ -126,9 +126,9 @@
     ],
     "dart.debugExternalLibraries": true,
     "dart.debugSdkLibraries": true,
-    "dart.warnWhenEditingFilesInPubCache": false
-    "dart.enableSdkFormatter": false
-    "bookmarks.navigateThroughAllFiles": false
+    "dart.warnWhenEditingFilesInPubCache": false,
+    "dart.enableSdkFormatter": false,
+    "bookmarks.navigateThroughAllFiles": false,
     "scrollFaster.scrollByLines": 8,
     "extension.smoothscroll.linesToScroll": 18,
 }
