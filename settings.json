@@ -1,4 +1,8 @@
 {
+    // this prevents menu bar from EVER showing, in addition to preventing alt key command (even with additional keys eg alt+m)
+    // from ever toggling the menu bar. Everything that is accessible from the menu bar is accessible from the command pallete...user that.
+    "window.menuBarVisibility": "hidden",
+
     "editor.mouseWheelScrollSensitivity": 5,
     // prevent Ctrl+P from showing recently opened files, since they could be from another workspace
     "search.quickOpen.includeHistory": false,
@@ -117,7 +121,6 @@
     "workbench.colorTheme": "Safire Star",
     "extension.smoothscroll.totalDelay": 150,
     "errorLens.onSave": true,
-    "window.menuBarVisibility": "toggle",
     "java.imports.gradle.wrapper.checksums": [
         {
             "sha256": "50726ef76b6599d458dd37169a6b42d86d3790c83f6065a398e3e672448d18c6",
@@ -131,4 +134,15 @@
     "bookmarks.navigateThroughAllFiles": false,
     "scrollFaster.scrollByLines": 8,
     "extension.smoothscroll.linesToScroll": 18,
+
+    "[dart]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnType": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false,
+    },
+    "dart.lineLength": 180,
+    "workbench.statusBar.visible": false,
 }
