@@ -15,7 +15,6 @@
     // if you change zoomlevel you are going to
     // have to change fontSize and caret thickness
     "window.zoomLevel": -1,
-    "editor.cursorWidth": 4,
     "editor.cursorWidth": 5,
     
     // Determines which settings editor to use by default.

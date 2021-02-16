@@ -137,7 +137,8 @@
         // "when": "editorTextFocus"
     // },
 
-    { "key": "alt+m", "command": "workbench.action.toggleMenuBar" },
+    // disable menu bar. All actions in menu bar can be done from command pallette
+    // { "key": "alt+m", "command": "workbench.action.toggleMenuBar" },
 
     { "key": "ctrl+alt+s", "command": "saveAll" },
 
