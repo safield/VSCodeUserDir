@@ -11,10 +11,12 @@
     // Default is true, but this will protect against other versions setting default to false
     "workbench.settings.openDefaultKeybindings": true,
 
+    // this setting scales the entire UI, but can make for blurry fonts, partiularily in the terminal
+    // "window.zoomLevel": -1,
+
     "workbench.settings.useSplitJSON":true,
     // if you change zoomlevel you are going to
     // have to change fontSize and caret thickness
-    "window.zoomLevel": -1,
     "editor.cursorWidth": 5,
     
     // Determines which settings editor to use by default.
@@ -77,7 +79,6 @@
     "scm.diffDecorationsGutterWidth": 1, // default is 3
 
     "editor.smoothScrolling": true,
-    "workbench.statusBar.visible": false,
 
     // When enabled, the notifications for extension recommendations will not be shown.
     "extensions.ignoreRecommendations": false,
@@ -110,8 +111,8 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "breadcrumbs.enabled": false,
     "editor.fontFamily": "'Inconsolata'",
-    "editor.fontSize": 15,
-    "editor.lineHeight": 14, // if you make this too small, error underlines get realy hard to see.
+    "editor.fontSize": 12,
+    "editor.lineHeight": 10, // if you make this too small, error underlines get realy hard to see.
 
     // prevent VSCode from adding unthemed color highglights to variables
     "editor.occurrencesHighlight": false,
