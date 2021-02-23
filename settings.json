@@ -112,6 +112,7 @@
     "breadcrumbs.enabled": false,
     "editor.fontFamily": "'Inconsolata'",
     "editor.fontSize": 12,
+    "debug.console.fontSize": 11,
     "editor.lineHeight": 10, // if you make this too small, error underlines get realy hard to see.
 
     // prevent VSCode from adding unthemed color highglights to variables
