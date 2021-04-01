@@ -1,4 +1,7 @@
 {
+    // prevent file names from changing colors based on git status
+    "workbench.editor.decorations.colors": false,
+    
     // this prevents menu bar from EVER showing, in addition to preventing alt key command (even with additional keys eg alt+m)
     // from ever toggling the menu bar. Everything that is accessible from the menu bar is accessible from the command pallete...user that.
     "window.menuBarVisibility": "hidden",
@@ -131,7 +134,6 @@
     "dart.debugExternalLibraries": true,
     "dart.debugSdkLibraries": true,
     "dart.warnWhenEditingFilesInPubCache": false,
-    "dart.enableSdkFormatter": false,
     "bookmarks.navigateThroughAllFiles": false,
     "scrollFaster.scrollByLines": 8,
     "extension.smoothscroll.linesToScroll": 18,
